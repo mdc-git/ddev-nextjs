@@ -1,4 +1,4 @@
-name: ddev-sveltekit
+name: ddev-nextjs
 
 pre_install_actions:
 - |
