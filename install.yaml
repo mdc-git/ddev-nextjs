@@ -1,0 +1,24 @@
+name: ddev-sveltekit
+
+pre_install_actions:
+- |
+  #ddev-nodisplay
+  for file in \
+    .ddev/nginx_full/nginx-site.conf \
+    .ddev/docker-compose.network.yaml; do
+      if [ -f $file ]; then
+        if ! grep "#ddev-generated" $file; then
+          echo "remove old style file $file"
+          rm $file
+        fi
+      fi
+    done
+
+project_files:
+  - nginx_full/nginx-site.conf
+  - docker-compose.network.yaml
+
+post_install_actions:
+  - echo '##############################################################'
+  - echo 'Please do not forget to edit .ddev/docker-compose.network.yaml'
+  - echo '##############################################################'
