@@ -2,7 +2,7 @@
 
 Run nextjs in dev mode behind nginx ssl proxy.
 
-Sample Usage:
+## Sample Usage:
 
 ```
 ddev config --auto --omit-containers=db,dba --nodejs-version=14
