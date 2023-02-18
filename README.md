@@ -1,3 +1,3 @@
 # ddev-nextjs
 
-Run nextjs with vite in dev mode behind nginx ssl proxy.
+Run nextjs in dev mode behind nginx ssl proxy.
