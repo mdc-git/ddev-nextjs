@@ -4,7 +4,7 @@
 
 ## What does it do?
 
-1. Overwrite `.ddev/nginx_full/nginx-site.conf` to proxy requests to http://localhost:3000.
+1. Overwrite `.ddev/nginx_full/nginx-site.conf` to proxy requests to `http://localhost:3000`.
 2. Install a `.ddev/docker-compose.network.yaml` to add additional known hosts in the network
 
 ## Sample Usage:
